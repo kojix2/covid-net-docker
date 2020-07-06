@@ -10,7 +10,7 @@
 docker pull kojix2/covid-net
 ```
 
-### build
+### Or build it yourself...
 
 ```sh
 git clone https://github.com/kojix2/covid-net-docker
