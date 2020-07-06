@@ -13,13 +13,15 @@ docker pull kojix2/covid-net
 ### build
 
 ```sh
-sudo docker build -t covid-net-image .
+git clone https://github.com/kojix2/covid-net-docker
+cd covid-net-docker
+sudo docker build -t kojix2/covid-net .
 ```
 
 ## Docker run
 
 ```sh
-sudo docker run -it -v $(pwd):/tmp/share covid-net-image bash
+sudo docker run -it -v $(pwd):/tmp/share kojix2/covid-net bash
 ```
 
 Then, you will see the message below.
