@@ -2,7 +2,15 @@
 
 [COVID-Net](https://github.com/lindawangg/COVID-Net)
 
-## Docker build
+## Docker pull or build
+
+### pull
+
+```sh
+docker pull kojix2/covid-net
+```
+
+### build
 
 ```sh
 sudo docker build -t covid-net-image .
@@ -48,7 +56,7 @@ python inference.py \
 ```sh
 python inference_severity.py \
     --weightspath_geo models/COVIDNet-SEV-GEO \
-    --weightspath_opcmodels/COVIDNet-SEV-OPC \
+    --weightspath_opc models/COVIDNet-SEV-OPC \
     --metaname model.meta \
     --ckptname model \
     --imagepath assets/ex-covid.jpeg
