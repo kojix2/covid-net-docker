@@ -1,4 +1,7 @@
 # covid-net-docker
+![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/kojix2/covid-net?style=flat-square)
+![Docker Image Size](https://img.shields.io/docker/image-size/kojix2/covid-net?style=flat-square)
+![Docker Image Version (latest by date)](https://img.shields.io/docker/v/kojix2/covid-net?style=flat-square)
 
 [COVID-Net](https://github.com/lindawangg/COVID-Net)
 
@@ -68,3 +71,7 @@ python inference_severity.py \
 
 https://github.com/lindawangg/COVID-Net/blob/master/docs/models.md
 
+## Want to make covid-net-docker better?
+
+* Report bugs
+* Fix bugs and submit pull requests
