@@ -3,8 +3,8 @@
 ![Docker Image Size](https://img.shields.io/docker/image-size/kojix2/covid-net?style=flat-square)
 ![Docker Image Version (latest by date)](https://img.shields.io/docker/v/kojix2/covid-net?style=flat-square)
 
-[COVID-Net](https://github.com/lindawangg/COVID-Net)
-
+ :couple: [COVID-Net](https://github.com/lindawangg/COVID-Net) - An open source project to find COVID-19 from chest x-ray images using deep learning.
+ 
 ## Docker pull or build
 
 ### pull
@@ -75,3 +75,7 @@ https://github.com/lindawangg/COVID-Net/blob/master/docs/models.md
 
 * Report bugs
 * Fix bugs and submit pull requests
+
+## Disclaimer
+
+COVID-NET is **not** a production-ready solution.
