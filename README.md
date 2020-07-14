@@ -76,6 +76,10 @@ https://github.com/lindawangg/COVID-Net/blob/master/docs/models.md
 * Report bugs
 * Fix bugs and submit pull requests
 
+## Contributors
+
+@sue445, @hareudon, @inductor and ruby-jp slack members.
+
 ## Disclaimer
 
 COVID-NET is **not** a production-ready solution.
