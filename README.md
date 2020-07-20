@@ -1,7 +1,8 @@
 # covid-net-docker
-![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/kojix2/covid-net?style=flat-square)
-![Docker Image Size](https://img.shields.io/docker/image-size/kojix2/covid-net?style=flat-square)
-![Docker Image Version (latest by date)](https://img.shields.io/docker/v/kojix2/covid-net?style=flat-square)
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/kojix2/covid-net?style=flat-square)](https://hub.docker.com/r/kojix2/covid-net/builds)
+[![Docker Image Size](https://img.shields.io/docker/image-size/kojix2/covid-net?style=flat-square)](https://hub.docker.com/r/kojix2/covid-net)
+[![Docker Image Version (latest by date)](https://img.shields.io/docker/v/kojix2/covid-net?style=flat-square)](https://hub.docker.com/r/kojix2/covid-net/tags)
+[![Source Github](https://img.shields.io/badge/source-github-green?style=flat-square)](https://github.com/kojix2/covid-net-docker)
 
  :couple: [COVID-Net](https://github.com/lindawangg/COVID-Net) - An open source project to find COVID-19 from chest x-ray images using deep learning.
  
