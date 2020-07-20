@@ -4,7 +4,9 @@
 [![Docker Image Version (latest by date)](https://img.shields.io/docker/v/kojix2/covid-net?style=flat-square)](https://hub.docker.com/r/kojix2/covid-net/tags)
 [![Source Github](https://img.shields.io/badge/source-github-green?style=flat-square)](https://github.com/kojix2/covid-net-docker)
 
- :couple: [COVID-Net](https://github.com/lindawangg/COVID-Net) - An open source project to find COVID-19 from chest x-ray images using deep learning.
+:couple: [COVID-Net](https://github.com/lindawangg/COVID-Net) - An open source project to find COVID-19 from chest x-ray images using deep learning.
+
+:orange: This docker image contains a pre-trained model. There is no need for additional downloads.
  
 ## Docker pull or build
 
