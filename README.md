@@ -26,6 +26,8 @@ sudo docker build -t kojix2/covid-net .
 
 ## Docker run
 
+Mount the current directory as a volume in Docker so that you can access the chest x-ray images placed in the current directory.
+
 ```sh
 sudo docker run -it -v $(pwd):/tmp/share kojix2/covid-net bash
 ```
@@ -59,6 +61,28 @@ python inference.py \
     --imagepath assets/ex-covid.jpeg
 ```
 
+Or
+
+```sh
+python inference.py \
+    --weightspath models/COVIDNet-CXR4-A \
+    --metaname model.meta \
+    --ckptname model-18540 \
+    --imagepath /tmp/share/your-chest-image.jpg
+```
+
+Result:
+
+`assets/ex-covid.jpeg`
+
+<image src="https://raw.githubusercontent.com/lindawangg/COVID-Net/master/assets/ex-covid.jpeg" alt="ex-covid" width="25%" height="25%"></src>
+
+```
+Prediction: COVID-19
+Confidence
+Normal: 0.031, Pneumonia: 0.189, COVID-19: 0.780
+```
+
 ## Inference Severity
 
 ```sh
@@ -68,6 +92,32 @@ python inference_severity.py \
     --metaname model.meta \
     --ckptname model \
     --imagepath assets/ex-covid.jpeg
+```
+
+Or
+
+```sh
+python inference_severity.py \
+    --weightspath_geo models/COVIDNet-SEV-GEO \
+    --weightspath_opc models/COVIDNet-SEV-OPC \
+    --metaname model.meta \
+    --ckptname model \
+    --imagepath /tmp/share/your-chest-image.jpg
+```
+
+Result:
+
+`assets/ex-covid.jpeg`
+
+<image src="https://raw.githubusercontent.com/lindawangg/COVID-Net/master/assets/ex-covid.jpeg" alt="ex-covid" width="25%" height="25%"></src>
+
+```
+Geographic severity: 0.519
+Geographic extent score for right + left lung (0 - 8): 4.155
+For each lung: 0 = no involvement; 1 = <25%; 2 = 25-50%; 3 = 50-75%; 4 = >75% involvement.
+Opacity severity: 0.388
+Opacity extent score for right + left lung (0 - 6): 2.329
+For each lung: 0 = no opacity; 1 = ground glass opacity; 2 =consolidation; 3 = white-out.
 ```
 
 ## Download pre trained models
